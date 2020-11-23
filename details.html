@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/yunjuStyle.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="swiper/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/yunju.js" charset="utf-8"></script>
+		<title>商品详情页</title>
+	</head>
+	<body>
+		<div class="yunju_TopTlt">
+			<div class="TopTlt_main">
+				<p class="topTlt_fl fl">迪信云聚商城 &nbsp;&nbsp;<span>2020年7月8日</span></p>
+				<div class="topTlt_shopCar fr">
+					<img src="./images/shopCar.png" />
+					<p>购物车</p>
+				</div>
+				<ul class="topTlt_list fr">
+					<li class='wechatBtn'>
+						<a href="javascript:void(0);">小程序商城</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">消息通知</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">注册</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="yunju_main">
+			<div class="wechat_bg">
+				<img src="images/wechat_code.png" />
+			</div>
+			<!-- 输入框 -->
+			<div class="yunju_searchBox">
+				<img class='searchBox_logo' src="images/yunjuLogo.png" />
+				<div class="searchBox_flex">
+					<input class='searchBox_flex_fl' type="text" name="" id="" value="" placeholder="输入产品名称,关键词" />
+					<p class="searchBox_flex_fr"><img src="images/search.png" /></p>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		<div class="details_title">
+			<p class="details_title_main">个护健康<span>></span>口腔护理<span>></span>LG按压牙膏</p>
+		</div>
+		<div class="yunju_main">
+			<div class="details_banner">
+				<div class="details_banner_fl">
+					<div class="swiper-container swiper" id="details_banner_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" role="group" aria-label="1 / 4"><img src="images/goods.png"></div>
+							<div class="swiper-slide" role="group" aria-label="2 / 4"><img src="images/goods.png"></div>
+							<div class="swiper-slide" role="group" aria-label="3 / 4"><img src="images/goods.png"></div>
+							<div class="swiper-slide" role="group" aria-label="4 / 4"><img src="images/goods.png"></div>
+						</div>
+						<div class="swiper-button-next swiper-button-black" tabindex="0" role="button" aria-label="Next slide"
+						 aria-controls="swiper-wrapper-123f1957c8bb9490" aria-disabled="false"></div>
+						<div class="swiper-button-prev swiper-button-black" tabindex="0" role="button" aria-label="Previous slide"
+						 aria-controls="swiper-wrapper-123f1957c8bb9490" aria-disabled="false"></div>
+					</div>
+					<div class="swiper-container thumbs" id="details_banner_swiperBtn">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide-visible" role="group" aria-label="1 / 4">
+								<div class="opacity">
+									<img src="images/goods.png">
+									<i></i>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-visible" role="group" aria-label="2 / 4">
+								<div class="opacity">
+									<img src="images/goods.png">
+									<i></i>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 4">
+								<div class="opacity">
+									<img src="images/goods.png">
+									<i></i>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-visible" role="group" aria-label="4 / 4">
+								<div class="opacity">
+									<img src="images/goods.png">
+									<i></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						var thumbsSwiper = new Swiper('.thumbs', {
+							spaceBetween: 10,
+							slidesPerView: 4,
+							watchSlidesVisibility: true, //防止不可点击
+						})
+						var gallerySwiper = new Swiper('.swiper', {
+							spaceBetween: 10,
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+							thumbs: {
+								swiper: thumbsSwiper,
+							}
+						})
+					</script>
+				</div>
+				<div class="details_banner_fr">
+					<div class="details_bannerFr_tltBox">
+						<p class="details_bannerFr_tlt">LG竹盐按压式牙膏285g（清新薄荷）</p>
+						<p class="details_bannerFr_tlt2">韩国进口/清新口气/护龈洁齿</p>
+						<p class="details_bannerFr_span"><span>正品保证</span><span>敏感牙齿</span></p>
+					</div>
+					<div class="details_bannerFr_price">
+						网站售价<span>¥29.90</span>
+					</div>
+					<div class="details_bannerFr_chooseBox">
+						<p class="details_bannerFr_chooseBox_tlt">选择款式/颜色</p>
+						<ul class="details_bannerFr_chooseBox_list" id="details_chooseList">
+							<li class="choose">竹盐薄荷</li>
+							<li>竹盐花香</li>
+						</ul>
+					</div>
+					<div class="details_bannerFr_address">
+						<p>配送至：</p>
+						<p class="details_bannerFr_addressBtn" id="details_addressBtn"><span>北京</span><img src="images/icon_address.png"></p>
+						<ul class="details_bannerFr_addressTan">
+							<li>北京</li>
+							<li>深圳</li>
+							<li>上海</li>
+							<li>广东</li>
+							<li>武汉</li>
+							<li>厦门</li>
+							<li>长春</li>
+							<li>沈阳</li>
+							<li>北京</li>
+							<li>深圳</li>
+							<li>上海</li>
+							<li>广东</li>
+							<li>武汉</li>
+							<li>厦门</li>
+							<li>长春</li>
+							<li>沈阳</li>
+						</ul>
+					</div>
+					<div class="details_bannerFr_nums">
+						<p class="details_bannerFr_chooseBox_tlt">选择数量</p>
+						<div class="details_bannerFr_numsBox">
+							<span id="numsFl">-</span>
+							<input id="numsInput" type="text" name="" id="" value="1" />
+							<span id="numsFr">+</span>
+						</div>
+					</div>
+					<div class="details_bannerFr_btns">
+						<a href="javascript:void(0);">加入购物车</a>
+						<a style="background: #FF5353; color:#fff;" href="javascript:void(0);">立即购买</a>
+					</div>
+				</div>
+			</div>
+			<img class="details_goodsImgs" src="images/detailspage.png" />
+		</div>
+		<div class="yunju_footer">
+			<div class="footer_main">
+				<ul class="footer_list">
+					<li>
+						<img src="images/icon_foot1.png">
+						<p>正品保障</p>
+					</li>
+					<li>
+						<img src="images/icon_foot2.png">
+						<p>品类齐全</p>
+					</li>
+					<li>
+						<img src="images/icon_foot3.png">
+						<p>闪电发货</p>
+					</li>
+					<li>
+						<img src="images/icon_foot4.png">
+						<p>售后保障</p>
+					</li>
+					<li>
+						<img src="images/icon_foot5.png">
+						<p>贴心服务</p>
+					</li>
+				</ul>
+				<div class="footer_bottom">
+					<img class="footer_wechatCode" src="images/wechat_code.png" />
+					<div class="footer_tlt">
+						<p>京ICP备17006091号</p>
+						<p>北京迪信云聚科技有限公司Copyright©2017</p>
+					</div>
+					<div class="footer_phoneNum">
+						<p>400-700-8800</p>
+						<p style="font-size:20px; font-weight:normal; color: rgba(48, 48, 48, 0.51);">(周一至周五 9:00-18:00)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

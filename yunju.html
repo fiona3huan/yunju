@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css" />
+		<script type="text/javascript" src='js/jquery.js'></script>
+		<script type="text/javascript" src="swiper/swiper.min.js"></script>
+		<script type="text/javascript" src="js/yunju.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/yunjuStyle.css" />
+		<title>云聚首页</title>
+	</head>
+	<body>
+		<div class="yunju_TopTlt">
+			<div class="TopTlt_main">
+				<p class="topTlt_fl fl">迪信云聚商城 &nbsp;&nbsp;<span>2020年7月8日</span></p>
+				<div class="topTlt_shopCar fr">
+					<img src="./images/shopCar.png" />
+					<p>购物车</p>
+				</div>
+				<ul class="topTlt_list fr">
+					<li class='wechatBtn'>
+						<a href="javascript:void(0);">小程序商城</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">消息通知</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">注册</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="yunju_main">
+			<div class="wechat_bg">
+				<img src="images/wechat_code.png" />
+			</div>
+			<!-- 输入框 -->
+			<div class="yunju_searchBox">
+				<img class='searchBox_logo' src="images/yunjuLogo.png" />
+				<div class="searchBox_flex">
+					<input class='searchBox_flex_fl' type="text" name="" id="" value="" placeholder="输入产品名称,关键词" />
+					<p class="searchBox_flex_fr"><img src="images/search.png" /></p>
+				</div>
+			</div>
+			<!-- banner -->
+			<div class="yunju_bannerBox">
+				<ul class="bannerBox_fl" id="bannerBox_fl">
+					<li><a href="javascript:void(0);">电脑整机</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">电脑配件</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">电脑外设</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">摄影摄像</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">数码配件</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">办公设备</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">文具用品</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">体育用品</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">健身器材</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">家用电器</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">厨卫大电</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">厨房小电</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">生活电器</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">个护健康</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">纺织箱包</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">生活用品</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">家具用品</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">五金电工</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">建筑材料</a><img src="images/banner_jt.png"></li>
+					<li><a href="javascript:void(0);">汽车用品</a><img src="images/banner_jt.png"></li>
+				</ul>
+				<div class="bannerBox_fr">
+					<div class="swiper-container" id="bannerBox_fr_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="javascript:void(0);"><img src="images/bannerImg1.png" /></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="javascript:void(0);"><img src="images/bannerImg2.png" /></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="javascript:void(0);"><img src="images/bannerImg3.png" /></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<script>
+						var mySwiper = new Swiper('javascript:void(0);bannerBox_fr_swiper', {
+							autoplay: true,
+							pagination: {
+								el: '.swiper-pagination',
+								clickable: true
+							},
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+						})
+					</script>
+				</div>
+				<div class="bannerBox_tanBox"></div>
+			</div>
+			<!-- banner标题图 -->
+			<img class="banner_tltBg" src="images/banner_tlt.png.png" />
+			<div class="yunju_recommend">
+				<p class="recommend_tlt">为你推荐</p>
+				<a class="recommend_more" href="javascript:void(0);">查看更多 ></a>
+			</div>
+			<ul class="recommend_list">
+				<li>
+					<a href="javascript:void(0);">
+						<img class="recommend_list_img" src="images/goods.png" />
+						<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+						<p class="recommend_list_f2">进口好物·味道清新</p>
+						<p class="recommend_list_price">¥29.90</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img class="recommend_list_img" src="images/goods.png" />
+						<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+						<p class="recommend_list_f2">进口好物·味道清新</p>
+						<p class="recommend_list_price">¥29.90</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img class="recommend_list_img" src="images/goods.png" />
+						<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+						<p class="recommend_list_f2">进口好物·味道清新</p>
+						<p class="recommend_list_price">¥29.90</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img class="recommend_list_img" src="images/goods.png" />
+						<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+						<p class="recommend_list_f2">进口好物·味道清新</p>
+						<p class="recommend_list_price">¥29.90</p>
+					</a>
+				</li>
+			</ul>
+			<div class="yunju_recommend">
+				<p class="recommend_tlt">数码配件</p>
+				<a class="recommend_more" href="javascript:void(0);">查看更多 ></a>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yunju_recommend">
+				<p class="recommend_tlt">日常用品</p>
+				<a class="recommend_more" href="javascript:void(0);">查看更多 ></a>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yunju_recommend">
+				<p class="recommend_tlt">厨房电器</p>
+				<a class="recommend_more" href="javascript:void(0);">查看更多 ></a>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="digital_list">
+				<img src="images/digital_tltBg.png" />
+				<ul class="recommend_list digital_hover" style="width:893px; margin:0; background:javascript:void(0);fff;">
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img class="recommend_list_img" src="images/goods.png" />
+							<p class="recommend_list_f1">LG竹盐 按压式牙膏285g</p>
+							<p class="recommend_list_f2">进口好物·味道清新</p>
+							<p class="recommend_list_price">¥29.90</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yunju_motion">
+				<div class="yunju_motion_fl">
+					<div class="motion_fl_tlt">
+						<p>文体器材</p>
+						<img src="images/motion_jt.png" />
+					</div>
+					<div class="motion_fl_list">
+						<div class="motion_fl_goods">
+							<a href="javascript:void(0);">
+								<img class="motion_fl_img" src="images/goods.png" />
+								<p class="motion_fl_f1">轻便居家跳绳 蓝色款</p>
+								<p class="motion_fl_f2">让你在家也能做运动</p>
+								<p class="motion_fl_f3"><span>￥</span>30.00</p>
+							</a>
+						</div>
+						<div class="motion_fl_flexfr">
+							<a href="javascript:void(0);"><img src="images/motion_fl_top.png" /></a>
+							<a style="align-self: flex-end;" href="javascript:void(0);"><img src="images/motion_fl_bottm.png" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="yunju_motion_fl yunju_motion_fr">
+					<div class="motion_fl_tlt">
+						<p>健康卫生</p>
+						<img src="images/motion_jt.png" />
+					</div>
+					<div class="motion_fl_list">
+						<div class="motion_fl_goods">
+							<a href="javascript:void(0);">
+								<img class="motion_fl_img" src="images/goods.png" />
+								<p class="motion_fl_f1">轻便居家跳绳 蓝色款</p>
+								<p class="motion_fl_f2">让你在家也能做运动</p>
+								<p class="motion_fl_f3"><span>￥</span>30.00</p>
+							</a>
+						</div>
+						<div class="motion_fl_goods">
+							<a href="javascript:void(0);">
+								<img class="motion_fl_img" src="images/goods.png" />
+								<p class="motion_fl_f1">轻便居家跳绳 蓝色款</p>
+								<p class="motion_fl_f2">让你在家也能做运动</p>
+								<p class="motion_fl_f3"><span>￥</span>30.00</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yunju_footer">
+			<div class="footer_main">
+				<ul class="footer_list">
+					<li>
+						<img src="images/icon_foot1.png">
+						<p>正品保障</p>
+					</li>
+					<li>
+						<img src="images/icon_foot2.png">
+						<p>品类齐全</p>
+					</li>
+					<li>
+						<img src="images/icon_foot3.png">
+						<p>闪电发货</p>
+					</li>
+					<li>
+						<img src="images/icon_foot4.png">
+						<p>售后保障</p>
+					</li>
+					<li>
+						<img src="images/icon_foot5.png">
+						<p>贴心服务</p>
+					</li>
+				</ul>
+				<div class="footer_bottom">
+					<img class="footer_wechatCode" src="images/wechat_code.png" />
+					<div class="footer_tlt">
+						<p>京ICP备17006091号</p>
+						<p>北京迪信云聚科技有限公司Copyright©2017</p>
+					</div>
+					<div class="footer_phoneNum">
+						<p>400-700-8800</p>
+						<p style="font-size:20px; font-weight:normal; color: rgba(48, 48, 48, 0.51);">(周一至周五 9:00-18:00)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
